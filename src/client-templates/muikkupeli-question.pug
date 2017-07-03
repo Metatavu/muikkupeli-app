@@ -1,0 +1,9 @@
+.question
+  .question-text
+    h3
+      =question.text
+  .question-options
+    each option in question.options
+      div
+        a.question-option-btn.muikkupeli-btn(href='#', data-points=option.points)
+          !=option.text
