@@ -148,8 +148,8 @@ body {
     }
     
     .start-button {
-      width: 400px;
-      margin-top: 55px;
+      width: 500px;
+      margin-top: 140px;
       margin-left: auto;
       margin-right: auto;
       padding-top: 20px;
@@ -157,7 +157,7 @@ body {
 
       
       h5 {
-        @include font-reqular(35px);
+        @include font-reqular(65px);
       }
     }
   }

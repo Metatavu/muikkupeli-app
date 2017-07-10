@@ -234,6 +234,7 @@
     _create : function() {
       StatusBar.hide();
       AndroidFullScreen.immersiveMode(() => {}, () => {});
+      $(this.element).stopRoutine(getConfig().exit);
       $(this.element).muikkupeliClock();
       $(this.element).muikkupeliWeather(getConfig().weather);
       $(this.element).on('touchend', '.start-button', $.proxy(this._startButtonClick, this));
@@ -247,6 +248,7 @@
 
     resetGame: function() {
       this.currentQuestion = 0;
+      this.animating = false;
       this.points = {
         PAAMAJA: 0,
         KULINARISTI: 0,
@@ -301,10 +303,15 @@
     },
 
     renderOtherFinish: function(result) {
+      if (this.animating) {
+        return;
+      }
+      this.animating = true;
+      
       const resultHtml = pugMuikkupeliResult({
         result: this.options.results[result]
       });
-
+      $('.before-show').remove();
       const oldResult = $(this.element).find('.finish-container > .result');
       const newResult = $(resultHtml).addClass('before-show');
       $(this.element).find('.finish-container').append(newResult);
@@ -312,6 +319,7 @@
         newResult.fadeIn(400, () => {
           newResult.removeClass('before-show');
           oldResult.remove();
+          this.animating = false;
         });
       });
     },
