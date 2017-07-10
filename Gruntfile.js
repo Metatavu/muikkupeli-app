@@ -28,7 +28,8 @@ module.exports = function(grunt) {
     
     const values = {
       server: config.server,
-      weather: config.weather
+      weather: config.weather,
+      stoproutine: config.stoproutine
     };
     
     fs.writeFileSync(this.data.options.output, util.format('function getConfig() { return %s; };', JSON.stringify(values)));

@@ -257,10 +257,9 @@ body {
   left: 0;
   bottom: 0;
   height: 200px;
-  border-top: 1px solid #ceccbd;
   width: 100%;
-  margin-top: 35px;
   background-color: #eeecdd;
+  z-index: 1;
   
   .container-fluid {
     padding-left: 0;
@@ -271,6 +270,7 @@ body {
     color: #000;
     margin-bottom: -20px;
     @include font-reqular(40px);
+    padding-bottom: 7px;
   }
   
   .footer-block {
@@ -278,17 +278,17 @@ body {
     padding-top: 35px;
     
     &.side-block {
-      padding-left: 15px;
+      padding-left: 30px;
       text-align: left;
       
       .text-container {
-        padding-top: 35px;
+        padding-top: 15px;
       }
     }
     
     small {
       color: #62baea;
-      font-size: 18px;
+      font-size: 20px;
     }
     
   }
@@ -296,6 +296,7 @@ body {
   .temp-container {
     padding-top: 5px;
     background-color: #62baea;
+    text-align: center;
 
     h5 {
       color: #fff;

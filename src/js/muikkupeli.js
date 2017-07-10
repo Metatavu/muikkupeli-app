@@ -234,7 +234,7 @@
     _create : function() {
       StatusBar.hide();
       AndroidFullScreen.immersiveMode(() => {}, () => {});
-      $(this.element).stopRoutine(getConfig().exit);
+      $(this.element).stopRoutine(getConfig().stoproutine);
       $(this.element).muikkupeliClock();
       $(this.element).muikkupeliWeather(getConfig().weather);
       $(this.element).on('touchend', '.start-button', $.proxy(this._startButtonClick, this));
