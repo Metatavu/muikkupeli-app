@@ -21,12 +21,12 @@
         MIKKELI: {
           img: 'gfx/mikkelimuikku_iso.png',
           title: 'Olet Mikkeli-muikku',
-          text: 'Olet ehkä Mikkeliläisempi kuin moni Mikkeliläinen itse. Kaupunkiasuminen järvisuomessa on kuin tehty sinua varten. Arvostat arjessasi perusasioiden sujuvuutta ja vapaa-ajallasi haluat harrastaa monipuolisesti. Tule kokeilemaan olisiko tämä tuleva kotikaupunkisi: testaa torikahvilat, käy eri lajien paikallisotteluissa ja fiilistele miltä tuntuisi asua Saimaan rannalla, vain kolmen kilometrin päässä keskustasta.'          
+          text: 'Olet ehkä mikkeliläisempi kuin moni mikkeliläinen itse. Kaupunkiasuminen Järvi-Suomessa on kuin tehty sinua varten. Arvostat arjessasi perusasioiden sujuvuutta ja vapaa-ajallasi haluat harrastaa monipuolisesti. Tule kokeilemaan olisiko tämä tuleva kotikaupunkisi: testaa torikahvilat, käy eri lajien paikallisotteluissa ja fiilistele miltä tuntuisi asua Saimaan rannalla, vain kolmen kilometrin päässä keskustasta.'          
         },
         KULINARISTI: {
           img: 'gfx/kulinaristimuikku_iso.png',
           title: 'Olet Kulinaristi-muikku',
-          text: 'Valitset lomakohteesi ruoan perusteella sillä herkullinen ruoka on sinulle intohimo ja arvostat hyviä raaka-aineita. Lähde siis makumatkalle Mikkelin seudulle, josta löydät Suomen parasta lähi- ja luomuruokaa. Nauti kuuluista kartanoiden pitopöydistä , osta tuliaisia torilta ja kauppahallista suoraan tuottajilta ja koe suomen suurimmat rapujuhlat.'          
+          text: 'Valitset lomakohteesi ruoan perusteella sillä herkullinen ruoka on sinulle intohimo ja arvostat hyviä raaka-aineita. Lähde siis makumatkalle Mikkelin seudulle, josta löydät Suomen parasta lähi- ja luomuruokaa. Nauti kuuluista kartanoiden pitopöydistä, osta tuliaisia torilta ja kauppahallista suoraan tuottajilta ja koe suomen suurimmat rapujuhlat.'          
         },
         PAAMAJA: {
           img: 'gfx/paamajamuikku_iso.png',
