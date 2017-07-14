@@ -275,7 +275,7 @@
     },
 
     renderStartScreen: function() {
-      $(this.element).find('.finish-screen').fadeOut(400, () => {
+      $(this.element).find('.finish-screen,.questions-screen').fadeOut(400, () => {
         $(this.element).find('.header-container').fadeIn(400);
         $(this.element).find('.start-screen').fadeIn(400);
       });
@@ -359,7 +359,6 @@
     
     _otherResultButtonClick: function(e) {
       const result = $(e.target).closest('.other-result-btn').attr('data-result');
-      console.log('HURRDURRR');
       this.renderOtherFinish(result);
     },
     
